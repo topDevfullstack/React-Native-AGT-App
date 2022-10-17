@@ -24,7 +24,7 @@ const SavedRequisition = () => {
         child_transaction_number = data[0][1];
         axios
           .post(
-            "http://192.168.106.71:5000/api/transactions/getsavedrequisition",
+            "http://192.168.109.55:5000/api/transactions/getsavedrequisition",
             {
               child_transaction_number: child_transaction_number,
             }
@@ -46,7 +46,7 @@ const SavedRequisition = () => {
       (data) => {
         axios
           .post(
-            "http://192.168.106.71:5000/api/transactions/submitsavedrequisition",
+            "http://192.168.109.55:5000/api/transactions/submitsavedrequisition",
             {
               child_transaction_number: data[0][1],
               entry_date: entry_date,
@@ -71,7 +71,7 @@ const SavedRequisition = () => {
         child_transaction_number = data[0][1];
         axios
           .post(
-            "http://192.168.106.71:5000/api/transactions/updatesavedrequisition",
+            "http://192.168.109.55:5000/api/transactions/updatesavedrequisition",
             {
               child_transaction_number: child_transaction_number,
               entry_date: entry_date,

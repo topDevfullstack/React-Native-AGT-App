@@ -15,7 +15,7 @@ const RetailerSelect = () => {
 
   useEffect(() => {
     axios
-      .get("http://192.168.106.71:5000/api/retailer/getretailer")
+      .get("http://192.168.109.55:5000/api/retailer/getretailer")
       .then((res) => {
         setRetailerList(res.data);
       })

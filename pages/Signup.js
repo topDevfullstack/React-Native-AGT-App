@@ -19,7 +19,7 @@ const Signup = () => {
 
   const signup = () => {
     axios
-      .post("http://192.168.106.71:5000/api/users/signup", {
+      .post("http://192.168.109.55:5000/api/users/signup", {
         username: username,
         password: password,
         email: email,

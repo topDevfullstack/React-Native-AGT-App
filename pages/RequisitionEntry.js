@@ -54,7 +54,7 @@ const RequisitionEntry = () => {
   const submit = (e) => {
     axios
       .post(
-        "http://192.168.106.71:5000/api/transactions/newpendingrequisition",
+        "http://192.168.109.55:5000/api/transactions/newpendingrequisition",
         {
           entry_date: entry_date,
           pickup_date: pickup_date,
@@ -73,7 +73,7 @@ const RequisitionEntry = () => {
 
   const save = (e) => {
     axios
-      .post("http://192.168.106.71:5000/api/transactions/newsavedrequisition", {
+      .post("http://192.168.109.55:5000/api/transactions/newsavedrequisition", {
         entry_date: entry_date,
         pickup_date: pickup_date,
         retailer: retailer,

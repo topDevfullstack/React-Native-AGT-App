@@ -39,7 +39,7 @@ const Transactions = () => {
 
   useEffect(() => {
     axios
-      .get("http://192.168.106.71:5000/api/transactions/getalltransactions")
+      .get("http://192.168.109.55:5000/api/transactions/getalltransactions")
       .then((res) => {
         console.log(res.data);
         setTransactionList(res.data);
@@ -52,7 +52,7 @@ const Transactions = () => {
   useEffect(() => {
     navigation.addListener("focus", () => {
       axios
-        .get("http://192.168.106.71:5000/api/transactions/getalltransactions")
+        .get("http://192.168.109.55:5000/api/transactions/getalltransactions")
         .then((res) => {
           console.log(res.data);
           setTransactionList(res.data);

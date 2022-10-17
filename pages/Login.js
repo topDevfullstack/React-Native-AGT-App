@@ -20,7 +20,7 @@ const Login = () => {
 
   const login = () => {
     axios
-      .post("http://192.168.106.71:5000/api/users/login", {
+      .post("http://192.168.109.55:5000/api/users/login", {
         password: password,
         email: email,
       })

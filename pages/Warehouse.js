@@ -62,7 +62,7 @@ const Warehouse = () => {
       child_transaction_number = data[0][1];
       setUsername(data[2][1]);
       axios
-        .post("http://192.168.106.71:5000/api/transactions/getopenshipment", {
+        .post("http://192.168.109.55:5000/api/transactions/getopenshipment", {
           child_transaction_number: data[0][1],
         })
         .then((res) => {

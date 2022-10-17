@@ -9,7 +9,7 @@ const Items = () => {
 
   useEffect(() => {
     axios
-      .get("http://192.168.106.71:5000/api/items/getitems")
+      .get("http://192.168.109.55:5000/api/items/getitems")
       .then((res) => {
         console.log(res.data);
         setItemsList(res.data);

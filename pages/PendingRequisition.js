@@ -23,7 +23,7 @@ const PendingRequisition = () => {
         child_transaction_number = data[0][1];
         axios
           .post(
-            "http://192.168.106.71:5000/api/transactions/getpendingrequisition",
+            "http://192.168.109.55:5000/api/transactions/getpendingrequisition",
             {
               child_transaction_number: child_transaction_number,
             }
@@ -48,7 +48,7 @@ const PendingRequisition = () => {
     ]).then((data) => {
       axios
         .post(
-          "http://192.168.106.71:5000/api/transactions/approvependingrequisition",
+          "http://192.168.109.55:5000/api/transactions/approvependingrequisition",
           {
             child_transaction_number: data[0][1],
             entry_date: entry_date,
@@ -71,7 +71,7 @@ const PendingRequisition = () => {
       (data) => {
         axios
           .post(
-            "http://192.168.106.71:5000/api/transactions/rejectpendingrequisition",
+            "http://192.168.109.55:5000/api/transactions/rejectpendingrequisition",
             {
               child_transaction_number: data[0][1],
             }
